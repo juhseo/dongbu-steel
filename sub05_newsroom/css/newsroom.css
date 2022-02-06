@@ -1,0 +1,213 @@
+* { 
+    margin: 0; 
+    padding: 0; 
+    box-sizing: border-box;
+    font-family: 'Lato', 'Noto Sans KR', sans-serif, 'Nanum Barun Gothic', 
+    'NanumBarunGothic', '나눔바른고딕', 'Nanum Gothic', 'nanumgothic';
+}
+li{list-style: none;}
+a{text-decoration: none; color: inherit;}
+body{ -ms-overflow-style: none; } ::-webkit-scrollbar { display: none; }
+
+/* header */
+#hd_top{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    background-color: transparent;
+    z-index: 1;
+}
+#hd_right{
+    display: flex;
+    align-items: center;
+}
+#rig_subb > ul {
+    display: flex;
+    color: #fff;
+    font-weight: 1000;
+    letter-spacing: 1px;
+}
+#rig_subb > ul > li{
+    font-size: 12px;
+    margin-right: 40px;
+    border-top: 2px solid transparent;
+    transition: 0.3s;
+}
+#rig_subb > ul > li:hover{
+    cursor: pointer;
+    border-top: 2px solid #fff;
+}
+#imenu > span {
+    padding-right: 30px;
+    color: #9f81fc;
+    font-size: 24px;
+}
+#hd_btm{
+    position: fixed;
+    right: 50%;
+    top: 80%;
+    transform: translateY(-50%);
+    z-index: 3000;
+}
+#hd_btm{
+    color: #fff;
+}
+
+/* sub메뉴 잠시 none */
+#submenu_top,#submenu_btm{
+    display: none;
+}
+#hd_btm{
+    display: none;
+}
+/* main */
+section{
+    width: 100%;
+    height: 100vh;
+    background-attachment: fixed;
+}
+/* sec01 */
+#newsroom_bg{
+    background-image: url(/img/sub05_newsroom/newsroom_bg.jpg);
+    background-size: cover;
+    width: inherit;
+    height: inherit;
+    background-position: center center;
+    background-attachment: fixed;
+}
+#newsroom_bg > h3{
+    position: absolute;
+    left:50%; 
+    top:50%; 
+    transform:translate(-50%,-50%);
+    color: #fff;
+    font-size: 46px;
+    text-align: center !important;
+    letter-spacing: 23px;
+}
+#sec02{
+    width: 100%;
+    height: auto;
+    background-color: #f1f1f1;
+}
+#sec02-bg{
+    text-align: center;
+}
+#btns{
+    display: flex;
+    justify-content: center;
+    cursor: pointer;
+    padding: 100px 0 50px 0;
+}
+#btn01{
+    text-align: center;
+    border: 1px solid #ccc;
+    background-color: #442270;
+    color: #fff;
+    padding: 10px 250px;
+}
+#btn01:hover{
+    background-color: #442270;
+    color: #fff;
+}
+#btn02:hover{
+    background-color: #442270;
+    color: #fff;
+}
+#btn02{
+    text-align: center;
+    border: 1px solid #ccc;
+    background-color: #fff;
+    color: #333;
+    padding: 10px 250px;
+    transition: 0.5s;
+}
+#news {
+    width: 65%;
+    margin: 0 auto;
+}
+.line {
+    display: flex;
+    justify-content: space-between;
+}
+.ns{
+    width: 32%;
+    border: 1px solid #ccc;
+    text-align: left;
+    margin-bottom: 20px;
+    padding-bottom: 200px;
+    background-color: #fff;
+}
+.ns:hover{
+    text-decoration: underline;
+}
+.ns_btm{
+    margin: 0 20px;
+}
+.n_hd{
+    font-weight: 550;
+    font-size: 18px;
+    color: #333;
+    padding: 10px 0;
+}
+.n_date{
+    padding: 50px 0;
+    font-size: 15px;
+    color: #666;
+}
+#n01_img{
+    height: 80%;
+    background-image: url(/img/sub05_newsroom/news01.jpg);
+    background-size: cover;
+    margin: 10px;
+}
+#n02_img{
+    height: 80%;
+    background-image: url(/img/sub05_newsroom/news02.jpg);
+    background-size: cover;
+    margin: 10px;
+}
+#n03_img{
+    height: 80%;
+    background-image: url(/img/sub05_newsroom/news03.jpg);
+    background-size: cover;
+    margin: 10px;
+}
+#n04_img{
+    height: 80%;
+    background-image: url(/img/sub05_newsroom/news04.jpg);
+    background-size: cover;
+    margin: 10px;
+}
+#n05_img{
+    height: 80%;
+    background-image: url(/img/sub05_newsroom/news05.jpg);
+    background-size: cover;
+    margin: 10px;
+}
+#n06_img{
+    height: 80%;
+    background-image: url(/img/sub05_newsroom/news06.jpg);
+    background-size: cover;
+    margin: 10px;
+}
+#n07_img{
+    height: 80%;
+    background-image: url(/img/sub05_newsroom/news07.jpg);
+    background-size: cover;
+    margin: 10px;
+}
+#n08_img{
+    height: 80%;
+    background-image: url(/img/sub05_newsroom/news08.jpg);
+    background-size: cover;
+    margin: 10px;
+}
+#n09_img{
+    height: 80%;
+    background-image: url(/img/sub05_newsroom/news09.jpg);
+    background-size: cover;
+    margin: 10px;
+}

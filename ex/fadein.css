@@ -1,0 +1,13 @@
+@keyframes fade {
+    from { opacity : 0.7; }
+    to { opacity : 1; }
+}
+.fadeImg{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    /* width: 100%;
+    height: 100vh; */
+    transform: translate(-50%,-50%);
+    animation: fade 0.9s;
+}
