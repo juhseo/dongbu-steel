@@ -67,39 +67,6 @@ section{
     height: 100vh;
     background-attachment: fixed;
 }
-/* .slide_wrap{
-    width: 100%;
-    height: 100vh;
-}
-#slide_group_view{
-    width: 100%;
-    height: 100vh;
-    position: absolute;
-    overflow: hidden;
-} */
-/* #slide_group_view{
-    width: 40%;
-    height: 30%;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%,-50%);
-    overflow: hidden;
-} * 슬라이드 일시 여기만 주석처리/
-/* #slide_group {
-    width: 100%;
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 100%;
-}
-.slide_img{
-    position: absolute;
-    width: 100%;
-    top: 50%;
-    left: 0;
-    transform: translateY(-50%);
-} */
 /* #nav a {
     display: block;
     width: 30px;
@@ -177,64 +144,6 @@ section{
     background-color: transparent;
 }
 
-/* .rig_sub::after{
-    content: '';
-    position: absolute;
-    top: 50%;
-    right: 0;
-    margin-top: -4px;
-    width: 10px;
-    height: 10px;
-    border-radius: 50%;
-    background-color: #999;
-    border: 1px transparent solid;
-    -webkit-transition: all .3s;
-    -o-transition: all .3s;
-    transition: all .3s;
-    opacity: 1;
-} */
-/* #conn{
-    position: fixed;
-    right: 50px;
-    top: 50%;
-    transform: translateY(-50%);
-    text-align: right;
-    z-index: 5;
-}
-#conn li{
-    line-height: 27px;
-}
-#conn li a span{
-    transition: 0.5s;
-}
-#conn li a span:hover, #conn li a span.on{
-    color: #9f81fc;
-    font-size: 20px;
-}
-#conn li a {
-    display: block;
-    padding-right: 20px;
-    height: 30px;
-    line-height: 30px;
-    color: #999;
-}
-#conn li a::after{
-    content: '';
-    position: absolute;
-    top: 50%;
-    right: 0;
-    margin-top: -4px;
-    width: 10px;
-    height: 10px;
-    border-radius: 50%;
-    background-color: #999;
-    border: 1px transparent solid;
-    -webkit-transition: all .3s;
-    -o-transition: all .3s;
-    transition: all .3s;
-    opacity: 1;
-} */
-
 /* sub메뉴 잠시 none */
 #submenu_top,#submenu_btm{
     display: none;
@@ -246,22 +155,15 @@ section{
 #sec_01{
     width: 100%;
     height: 100vh;
-    /* position: absolute; */
 }
 #sec_01 > .fadeImg{
     position: absolute;
-    /* width: 100%;
-    height: 100vh;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%,-50%); */
     animation: fade 0.9s;
 }
 /* sec02 */
 #sec_02{
     width: 100%;
     height: 100vh;
-    /* position: absolute; */
     display: flex;
     position: relative;
 }
@@ -321,9 +223,7 @@ section{
 #sec_03{
     width: 100%;
     height: 100vh;
-    /* padding-top:100vh; */
     display: flex;
-    /* position: absolute; */
 }
 .sec03s{
     width: 25%;
@@ -370,9 +270,6 @@ section{
 #sec_04{
     width: 100%;
     height: 100vh;
-    /* padding-top: 100vh; */
-    /* position: absolute; */
-
 }#bg{
     background-image: url(/img/main/sec04/sec04_bg.png);
     background-color: #475764;
@@ -433,7 +330,6 @@ section{
 #sec_05{
     width: 100%;
     height: 100vh;
-    /* padding-top:100vh; */
     position: absolute;
     background-color: rgb(34,34,34);
 }
