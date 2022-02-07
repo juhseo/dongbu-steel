@@ -6,12 +6,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="css/company.css">
+    <link rel="stylesheet" href="/main/css/header.css">
     <link href="https://fonts.googleapis.com/css2?family=Material+Icons" rel="stylesheet">
+    <script src="/js/jquery-3.4.1.min.js"></script>
+    <script src="/js/jquery.mousewheel.js"></script>
+    <script src="/main/js/autoscroll.js"></script>
+    <script src="/main/js/submenu.js" defer></script>
 </head>
 <body>
     <header>
         <div id="hd_top">
-            <a href="/main/main.html"><img src="/img/main/hd_logo.png" alt="hdlogo"></img></a>
+            <a href="/main/main.html"><img src="/img/main/hd_logo.png" alt="hdlogo"/></a>
             <div id="hd_right">
                 <div id="rig_subb">
                     <ul>
@@ -25,77 +30,127 @@
                 </div>
                 <span id="imenu">
                     <span class="material-icons">menu</span>
+                </span>
+                <div id="rigmenu">
+                    <div id="close_btn">
+                        <span class="material-icons">
+                            close
+                        </span>
+                    </div>
                     <div id="submenu_top">
-                        <ul>
-                            <li>HOME</li>
-                            <li>
-                                <span>PRODUCT</span>
-                                <i></i>
-                                <ul>
+                        <ul class="sub_1st">
+                            <li class="sub_2nd">HOME</li>
+                            <li class="sub_2nd">
+                                <div class="sub_hd">
+                                    <span>PRODUCT</span>
+                                    <i id="plusbtn" class="material-icons">add</i>
+                                </div>
+                                <ul class="sub">
                                     <li>COLDROLLED & GALVANIZED STEEL</li>
                                     <li>XTONE</li>
                                     <li>TIN PLATE STEEL</li>
                                 </ul>
                             </li>
-                            <li>
-                                <span>XTONE</span>
-                                <i></i>
-                                <ul>
+                            <li class="sub_2nd">
+                                <div class="sub_hd">
+                                    <span>XTONE</span>
+                                    <i class="material-icons">add</i>
+                                </div>
+                                <ul class="sub">
                                     <li>PRE-COATED METAL</li>
                                     <li>PRINTECH</li>
                                     <li>PROJECT</li>
                                     <li>COLOR VISUALIZER</li>
                                 </ul>
                             </li>
-                            <li>
-                                <span>SUPPORT</span>
-                                <i></i>
-                                <ul>
+                            <li class="sub_2nd">
+                                <div class="sub_hd">
+                                    <span>SUPPORT</span>
+                                    <i class="material-icons">add</i>
+                                </div>
+                                <ul class="sub">
                                     <li>CONSULTANT</li>
                                     <li>CATALOGUE DOWNLOAD</li>
                                     <li>PRDUCT DATA</li>
                                 </ul>
                             </li>
-                            <li>
-                                <span>COMPANY</span>
-                                <i></i>
-                                <ul>
+                            <li class="sub_2nd">
+                                <div class="sub_hd">
+                                    <span>COMPANY</span>
+                                    <i class="material-icons">add</i>
+                                </div>
+                                <ul class="sub">
                                     <li>경영철학</li>
                                     <li>윤리경영</li>
                                     <li>투자정보</li>
                                 </ul>
                             </li>
-                            <li>
-                                <span>NEWS ROOM</span>
-                                <i></i>
-                                <ul>
+                            <li class="sub_2nd">
+                                <div class="sub_hd">
+                                    <span>NEWS ROOM</span>
+                                    <i class="material-icons">add</i>
+                                </div>
+                                <ul class="sub">
                                     <li>PRESS CENTER</li>
                                     <li>MEDIA LABRARY</li>
                                 </ul>
                             </li>
-                            <li>E-SALES</li>
+                            <li class="sub_2nd">E-SALES</li>
                         </ul>
                     </div>
                     <div id="submenu_btm">
                         <ul>
-                            <li>
+                            <li class="btm_lis btm_lis01">
                                 <p>KG동부제철 전자구매시스템</p>
-                                <!-- 아이콘넣기 -->
-                                <i></i>
+                                <span class="material-icons">
+                                    arrow_right_alt
+                                </span>
                             </li>
-                            <li>
+                            <li class="btm_lis btm_lis02">
                                 <p>검사증명서 원본대조</p>
-                                <!-- 아이콘넣기 -->
-                                <i></i>
+                                <span class="material-icons">
+                                    arrow_right_alt
+                                </span>
                             </li>
                         </ul>
                         <div>
                             ©2021 KG Dongbu Steel All Rights Reserved.
                         </div>
                     </div>
-                </span>
-            </div>            
+                </div>
+            </div>
         </div>
+        <div id="rigsubb">
+            <div id="conn">
+                <ul>
+                    <li class="rig_sub">
+                        <p>Main</p>
+                        <span></span>
+                    </li>
+                    <li class="rig_sub">
+                        <p>Product</p>
+                        <span></span>
+                    </li>
+                    <li class="rig_sub">
+                        <p>Xtone</p>
+                        <span></span>
+                    </li>
+                    <li class="rig_sub">
+                        <p>Support</p>
+                        <span></span>
+                    </li>
+                    <li class="rig_sub">
+                        <p>Company</p>
+                        <span></span>
+                    </li>
+                    <li class="rig_sub">
+                        <p>News Room</p>
+                        <span></span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        
         <div id="hd_btm">
             <span class="material-icons">mouse</span>
             <p>스크롤다운</p>

@@ -16,50 +16,6 @@ body{ -ms-overflow-style: none; } ::-webkit-scrollbar { display: none; }
 }
 
 /* 본문 */
-#hd_top{
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    position: fixed;
-    background-color: transparent;
-    z-index: 1;
-}
-#hd_right{
-    display: flex;
-    align-items: center;
-}
-#rig_subb > ul {
-    display: flex;
-    color: #fff;
-    font-weight: 1000;
-    letter-spacing: 1px;
-}
-#rig_subb > ul > li{
-    font-size: 12px;
-    margin-right: 40px;
-    border-top: 2px solid transparent;
-    transition: 0.3s;
-}
-#rig_subb > ul > li:hover{
-    cursor: pointer;
-    border-top: 2px solid #fff;
-}
-#imenu > span {
-    padding-right: 30px;
-    color: #9f81fc;
-    font-size: 24px;
-}
-#hd_btm{
-    position: fixed;
-    right: 50%;
-    top: 80%;
-    transform: translateY(-50%);
-    z-index: 3000;
-}
-#hd_btm{
-    color: #fff;
-}
 
 /* main */
 section{
@@ -97,6 +53,9 @@ section{
     transform: translateY(-50%);
     text-align: right;
     z-index: 5;
+}
+#rigsubb.on{
+    opacity: 0;
 }
 .rig_sub{
     display: flex;
@@ -145,9 +104,6 @@ section{
 }
 
 /* sub메뉴 잠시 none */
-#submenu_top,#submenu_btm{
-    display: none;
-}
 #hd_btm{
     display: none;
 }
@@ -330,7 +286,7 @@ section{
 #sec_05{
     width: 100%;
     height: 100vh;
-    position: absolute;
+    position: relative;
     background-color: rgb(34,34,34);
 }
 #sec_05 > h1{
@@ -369,7 +325,6 @@ section{
 #sec_06{
     width: 100%;
     height: 100vh;
-    padding-top:100vh;
     position: absolute;
 }
 #last_sec{

@@ -54,4 +54,3 @@ for(let i=0; i<lis.length; i++){
     })
 }
 
-//03. section04 스크롤시 scale 조정

@@ -6,11 +6,11 @@ console.log(openDiv);
 console.log(closeDiv);
 console.log(lis[1]);
 openDiv.addEventListener('click',function(){
-    document.querySelector('#leftmenu').classList.add('on');
+    document.querySelector('#rigmenu').classList.add('on');
     document.querySelector('.blackbg').classList.add('on');
 })
 closeDiv.addEventListener('click',function(){
-    document.querySelector('#leftmenu').classList.remove('on');
+    document.querySelector('#rigmenu').classList.remove('on');
     document.querySelector('.blackbg').classList.remove('on');
     lis.forEach(li=>li.classList.remove('on'));
 })

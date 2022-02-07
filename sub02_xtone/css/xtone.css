@@ -9,60 +9,13 @@ li{list-style: none;}
 a{text-decoration: none; color: inherit;}
 body{ -ms-overflow-style: none; } ::-webkit-scrollbar { display: none; }
 
-/* 헤더 넣기 */
-#hd_top{
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    position: fixed;
-    background-color: transparent;
-    z-index: 1;
-}
-#hd_right{
-    display: flex;
-    align-items: center;
-}
-#rig_subb > ul {
-    display: flex;
-    color: #fff;
-    font-weight: 1000;
-    letter-spacing: 1px;
-}
-#rig_subb > ul > li{
-    font-size: 12px;
-    margin-right: 40px;
-    border-top: 2px solid transparent;
-    transition: 0.3s;
-}
-#rig_subb > ul > li:hover{
-    cursor: pointer;
-    border-top: 2px solid #fff;
-}
-#imenu > span {
-    padding-right: 30px;
-    color: #9f81fc;
-    font-size: 24px;
-}
-#hd_btm{
-    position: fixed;
-    right: 50%;
-    top: 80%;
-    transform: translateY(-50%);
-    z-index: 3000;
-}
-#hd_btm{
-    color: #fff;
-}
-
-/* sub메뉴 잠시 none */
-#submenu_top,#submenu_btm{
-    display: none;
-}
+/* none */
 #hd_btm{
     display: none;
 }
-
+#rigsubb{
+    display: none;
+}
 
 /* main */
 section{

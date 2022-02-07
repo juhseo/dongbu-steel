@@ -1,57 +1,77 @@
-* {margin:0; padding: 0; box-sizing: border-box;}
-li{ list-style: none;}
-body{
-    width: 100vh;
-    overflow: hidden;
+#hd_top{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    background-color: transparent;
+    z-index: 1;
 }
-#header{
-    text-align: center;
-    background-color: pink;
-    line-height: 60px;
+#hd_right{
+    display: flex;
+    align-items: center;
 }
-#header div{
+#rig_subb {
+    margin-right: 50px;
+}
+#rig_subb > ul {
+    display: flex;
+    color: #fff;
+    font-weight: 1000;
+    letter-spacing: 1px;
+}
+#rig_subb > ul > li{
+    font-size: 12px;
+    margin-right: 40px;
+    border-top: 2px solid transparent;
+    transition: 0.3s;
+}
+#rig_subb > ul > li:hover{
+    cursor: pointer;
+    border-top: 2px solid #fff;
+}
+#imenu > span {
+    padding-right: 30px;
+    color: #9f81fc;
+    font-size: 24px;
+}
+#imenu{
     position: absolute;
     right: 0;
     width: 60px;
     height: 60px;
-    background-color: rgba(0,0,0,0.5);
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    z-index:1;
+    z-index:100;
     /* 제일 위로 올려주기 */
 }
-.blackbg{
-    position: absolute;
-    /* 겹쳐줘야해서 absolute */
-    width: 100%;
-    height: 100vh;
-    background-color: rgba(0,0,0,0.5);
-    left:0;
-    top: 0;
-    opacity: 0;
-    transition: 0.5s;
+#imenu:hover{
+    cursor: pointer;
 }
 #rigmenu{
     width: 25%;
     position: absolute;
     right: -40%;
-    /* right0으로 맞추기 */
     top: 0;
     height: 100vh;
     background-color: #fff;
     transition: 0.5s;
-    z-index: 2;
+    z-index: 200;
 }
 #rigmenu.on{
     right: 0;
+    position: absolute;
 }
 #close_btn {
     /* rigmenu div */
     height: 30px;
     color: #333;
     float: right;
+}
+#close_btn:hover{
+    cursor: pointer;
 }
 #close_btn > span{
     padding: 30px 20px 30px 0;
@@ -126,3 +146,4 @@ body{
     font-size: 11px;
     color: #666;
 }
+
