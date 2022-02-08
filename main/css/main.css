@@ -83,6 +83,7 @@ section{
 .rig_sub p:hover{
     color: #999;
     opacity: 1;
+    cursor: pointer;
 }
 .rig_sub p.on{
     color: #9f81fc;
@@ -101,11 +102,32 @@ section{
     height: 0;
     border :1px solid #999;
     background-color: transparent;
+    cursor: pointer;
 }
 
 /* sub메뉴 잠시 none */
-#hd_btm{
-    display: none;
+#hd_btm > span{
+    position: absolute;
+    top: 88%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    z-index: 100;
+    color: #fff;
+    font-size: 40px;
+    transition: 0.8s;
+}
+#hd_btm:hover span{
+    top: 90%;
+}
+#hd_btm > p{
+    position: absolute;
+    top: 94%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    z-index: 100;
+    color: #fff;
+    letter-spacing: 3px;
+    font-size: 16px;
 }
 /* sec01 */
 #sec_01{
@@ -149,7 +171,17 @@ section{
     font-weight: bold;
     padding-bottom: 20px;
     letter-spacing: 5px;
+    /* 아래 수정부분 */
+    /* position: absolute;
+    top: -200px;
+    transition: 0.8s;
+    opacity: 1;
+    overflow: hidden; */
 }
+/* .txt_top.on{
+    opacity: 1;
+    top: 300px;
+} */
 .sec02_bann{
     display: flex;
     align-items: center;
