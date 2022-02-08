@@ -2,9 +2,11 @@ let openDiv = document.querySelector('#imenu');
 let closeDiv = document.querySelector('#close_btn > span');
 let ul = document.querySelector('.sub_1st');
 let liss = document.querySelectorAll('.sub_1st > li');
+let plusBtn = document.querySelector('.plusbtn');
 console.log(openDiv);
 console.log(closeDiv);
 console.log(liss[1]);
+
 //open
 openDiv.addEventListener('click',function(){
     document.querySelector('#rigmenu').classList.add('on');

@@ -53,3 +53,10 @@ $(document).ready(function(){
         }
     })
 })
+
+//서브페이지 main text 무빙
+// $(document).ready(function(){
+    
+// })
+
+

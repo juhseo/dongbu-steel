@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="/main/css/main.css">
     <link rel="stylesheet" href="css/xtone.css">
     <link rel="stylesheet" href="/main/css/header.css">
     <link href="https://fonts.googleapis.com/css2?family=Material+Icons" rel="stylesheet">
@@ -12,9 +13,10 @@
     <script src="/js/jquery.mousewheel.js"></script>
     <script src="/main/js/autoscroll.js"></script>
     <script src="/main/js/submenu.js" defer></script>
+    <script src="js/move.js"></script>
+    <script src="/main//js/mousemoving.js"></script>
 </head>
 <body>
-    <!-- 헤더 수정 후 넣기 -->
     <header>
         <div id="hd_top">
             <a href="/main/main.html"><img src="/img/main/hd_logo.png" alt="hdlogo"/></a>
@@ -44,7 +46,7 @@
                             <li class="sub_2nd">
                                 <div class="sub_hd">
                                     <span>PRODUCT</span>
-                                    <i id="plusbtn" class="material-icons">add</i>
+                                    <i class="material-icons plusbtn">add</i>
                                 </div>
                                 <ul class="sub">
                                     <li>COLDROLLED & GALVANIZED STEEL</li>
@@ -55,7 +57,7 @@
                             <li class="sub_2nd">
                                 <div class="sub_hd">
                                     <span>XTONE</span>
-                                    <i class="material-icons">add</i>
+                                    <i class="material-icons plusbtn">add</i>
                                 </div>
                                 <ul class="sub">
                                     <li>PRE-COATED METAL</li>
@@ -67,7 +69,7 @@
                             <li class="sub_2nd">
                                 <div class="sub_hd">
                                     <span>SUPPORT</span>
-                                    <i class="material-icons">add</i>
+                                    <i class="material-icons plusbtn">add</i>
                                 </div>
                                 <ul class="sub">
                                     <li>CONSULTANT</li>
@@ -78,7 +80,7 @@
                             <li class="sub_2nd">
                                 <div class="sub_hd">
                                     <span>COMPANY</span>
-                                    <i class="material-icons">add</i>
+                                    <i class="material-icons plusbtn">add</i>
                                 </div>
                                 <ul class="sub">
                                     <li>경영철학</li>
@@ -89,7 +91,7 @@
                             <li class="sub_2nd">
                                 <div class="sub_hd">
                                     <span>NEWS ROOM</span>
-                                    <i class="material-icons">add</i>
+                                    <i class="material-icons plusbtn">add</i>
                                 </div>
                                 <ul class="sub">
                                     <li>PRESS CENTER</li>
@@ -154,7 +156,7 @@
         
         <div id="hd_btm">
             <span class="material-icons">mouse</span>
-            <p>스크롤다운</p>
+            <p>SCROLL DOWN</p>
             <!-- E-SALES -->
         </div>
     </header>
@@ -166,15 +168,17 @@
                 <img src="/img/sub02_xtone/xToneLogo.png" alt="xtonelogo">
             </div>
         </section>
-        <section id="sec_02">
-            <div id="sec02_01" class="sec02s">
-                <div class="txt_box1">
+        <section id="sec_03">
+            <div id="sec03_01" class="sec03s">
+                <div class="txt_box1 txt_box_sec03">
                     <div class="txt_top">
-                        <span>
-                            PRE-COATED METAL<br/>
-                        </span>
+                        <div class="pos_box02">
+                            <span>
+                                PRE-COATED</br> METAL
+                            </span>
+                        </div>
                     </div>
-                    <div class="sec02_bann">
+                    <div class="sec03_bann">
                         <span>EXPLORE</span>
                         <i class="material-icons">
                             east
@@ -182,14 +186,16 @@
                     </div>
                 </div>
             </div>
-            <div id="sec02_02" class="sec02s">
-                <div class="txt_box1">
+            <div id="sec03_02" class="sec03s">
+                <div class="txt_box1 txt_box_sec03">
                     <div class="txt_top">
-                        <span>
-                            PRINTECH<br/>
-                        </span>
+                        <div class="pos_box02">
+                            <span>
+                                PRINTECH<br/>
+                            </span>
+                        </div>
                     </div>
-                    <div class="sec02_bann">
+                    <div class="sec03_bann">
                         <span>EXPLORE</span>
                         <i class="material-icons">
                             east
@@ -197,14 +203,16 @@
                     </div>
                 </div>
             </div>
-            <div id="sec02_03" class="sec02s">
-                <div class="txt_box1">
+            <div id="sec03_03" class="sec03s">
+                <div class="txt_box1 txt_box_sec03">
                     <div class="txt_top">
-                        <span>
-                            PROJECT<br/>
-                        </span>
+                        <div class="pos_box02">
+                            <span>
+                                PROJECT<br/>
+                            </span>
+                        </div>
                     </div>
-                    <div class="sec02_bann">
+                    <div class="sec03_bann">
                         <span>EXPLORE</span>
                         <i class="material-icons">
                             east
@@ -212,15 +220,17 @@
                     </div>
                 </div>
             </div>
-            <div id="sec02_04" class="sec02s">
-                <div class="txt_box1">
+            <div id="sec03_04" class="sec03s">
+                <div class="txt_box1 txt_box_sec03">
                     <div class="txt_top">
-                        <span>
-                            COLOR<br/>
-                            VISUALIZER<br/>
-                        </span>
+                        <div class="pos_box02">
+                            <span>
+                                COLOR<br/>
+                                VISUALIZER<br/>
+                            </span>
+                        </div>
                     </div>
-                    <div class="sec02_bann">
+                    <div class="sec03_bann">
                         <span>EXPLORE</span>
                         <i class="material-icons">
                             east

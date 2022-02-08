@@ -7,11 +7,15 @@
     <title>Document</title>
     <link rel="stylesheet" href="css/product.css">
     <link rel="stylesheet" href="/main/css/header.css">
+    <link rel="stylesheet" href="/main/css/main.css">
     <link href="https://fonts.googleapis.com/css2?family=Material+Icons" rel="stylesheet">
     <script src="/js/jquery-3.4.1.min.js"></script>
     <script src="/js/jquery.mousewheel.js"></script>
     <script src="/main/js/autoscroll.js"></script>
     <script src="/main/js/submenu.js" defer></script>
+    <script src="/main/js/move.js" defer></script>
+    <!-- <script src="js/moveTitle.js" defer></script> -->
+    <script src="/main/js/mousemoving.js" defer></script>
 </head>
 <body>
     <!-- 헤더 넣기 -->
@@ -44,7 +48,7 @@
                             <li class="sub_2nd">
                                 <div class="sub_hd">
                                     <span>PRODUCT</span>
-                                    <i id="plusbtn" class="material-icons">add</i>
+                                    <i class="material-icons plusbtn">add</i>
                                 </div>
                                 <ul class="sub">
                                     <li>COLDROLLED & GALVANIZED STEEL</li>
@@ -55,7 +59,7 @@
                             <li class="sub_2nd">
                                 <div class="sub_hd">
                                     <span>XTONE</span>
-                                    <i class="material-icons">add</i>
+                                    <i class="material-icons plusbtn">add</i>
                                 </div>
                                 <ul class="sub">
                                     <li>PRE-COATED METAL</li>
@@ -67,7 +71,7 @@
                             <li class="sub_2nd">
                                 <div class="sub_hd">
                                     <span>SUPPORT</span>
-                                    <i class="material-icons">add</i>
+                                    <i class="material-icons plusbtn">add</i>
                                 </div>
                                 <ul class="sub">
                                     <li>CONSULTANT</li>
@@ -78,7 +82,7 @@
                             <li class="sub_2nd">
                                 <div class="sub_hd">
                                     <span>COMPANY</span>
-                                    <i class="material-icons">add</i>
+                                    <i class="material-icons plusbtn">add</i>
                                 </div>
                                 <ul class="sub">
                                     <li>경영철학</li>
@@ -89,7 +93,7 @@
                             <li class="sub_2nd">
                                 <div class="sub_hd">
                                     <span>NEWS ROOM</span>
-                                    <i class="material-icons">add</i>
+                                    <i class="material-icons plusbtn">add</i>
                                 </div>
                                 <ul class="sub">
                                     <li>PRESS CENTER</li>
@@ -154,7 +158,7 @@
         
         <div id="hd_btm">
             <span class="material-icons">mouse</span>
-            <p>스크롤다운</p>
+            <p>SCROLL DOWN</p>
             <!-- E-SALES -->
         </div>
     </header>
@@ -172,10 +176,12 @@
             <div id="sec02_01" class="sec02s">
                 <div class="txt_box1">
                     <div class="txt_top">
-                        <span>
-                            COLDROLLED &<br/>
-                            GALVANIZED STEEL
-                        </span>
+                        <div class="pos_box01">
+                            <span>
+                                COLDROLLED &<br/>
+                                GALVANIZED STEEL
+                            </span>
+                        </div>
                     </div>
                     <div class="sec02_bann">
                         <span>EXPLORE</span>
@@ -187,8 +193,10 @@
             </div>
             <div id="sec02_02" class="sec02s">
                 <div class="txt_box2">
-                    <div class="txt_top">
-                        <img src="/img/main/sec02/mainXToneLogo.png" alt="xtone_logo" />
+                    <div class="pos_box01">
+                        <div class="txt_top">
+                            <img src="/img/main/sec02/mainXToneLogo.png" alt="xtone_logo" />
+                        </div>
                     </div>
                     <div class="sec02_bann">
                         <span>EXPLORE</span>
@@ -200,8 +208,10 @@
             </div>
             <div id="sec02_03" class="sec02s">
                 <div class="txt_box2">
-                    <div class="txt_top">
-                        <span>TIN PLATE STEEL</span>
+                    <div class="pos_box01">
+                        <div class="txt_top">
+                            <span>TIN PLATE STEEL</span>
+                        </div>
                     </div>
                     <div class="sec02_bann">
                         <span>EXPLORE</span>

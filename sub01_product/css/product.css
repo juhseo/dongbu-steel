@@ -5,18 +5,16 @@
     font-family: 'Lato', 'Noto Sans KR', sans-serif, 'Nanum Barun Gothic', 
     'NanumBarunGothic', '나눔바른고딕', 'Nanum Gothic', 'nanumgothic';
 }
+
 li{list-style: none;}
 a{text-decoration: none; color: inherit;}
 body{ -ms-overflow-style: none; } ::-webkit-scrollbar { display: none; }
+
 /* none */
-#hd_btm{
-    display: none;
-}
 #rigsubb{
     display: none;
 }
 
-/* section */
 section{
     width: 100%;
     height: 100vh;
@@ -31,66 +29,42 @@ section{
 #prod_bg > h3{
     position: absolute;
     left:50%; 
-    top:50%; 
+    /* top:60%;  */
+    top:50%;
     transform:translate(-50%,-50%);
     color: #fff;
     font-size: 46px;
     text-align: center !important;
     letter-spacing: 23px;
+    /* opacity: 0; */
+    overflow: hidden;
+    transition: 0.8s;
+    
 }
-#sec_02{
-    width: 100%;
-    height: 100vh;
-    /* position: absolute; nav버튼 실행안됨*/
-    display: flex;
+#prod_bg > h3.on{
+    opacity: 1;
+    top: 50%;
 }
-.sec02s{
-    width: 33.33333%;
-    height: 100vh;
+#hd_btm > span{
+    position: absolute;
+    top: 88%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    z-index: 100;
     color: #fff;
-    padding-left: 80px;
-    transition: 0.3s;
+    font-size: 40px;
+    transition: 0.8s;
 }
-.sec02_bann > i{
-    transition: 0.5s;
+#hd_btm:hover span{
+    top: 90%;
 }
-.sec02s span{
-    padding-right: 10px;
-}
-.sec02s:hover{
-    filter: brightness(200%);
-}
-.sec02s:hover .sec02_bann>i {
-    font-size: 35px;
-}
-.txt_top{
+#hd_btm > p{
+    position: absolute;
+    top: 95%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    z-index: 100;
     color: #fff;
-    display: block;
-    font-size: 36px;
-    font-weight: bold;
-    padding-bottom: 20px;
-    letter-spacing: 5px;
-}
-.sec02_bann{
-    display: flex;
-    align-items: center;
-    transition: 0.5s;
-}
-#sec02_01{
-    background-image: url(/img/sub01_product/sec02_01.jpg);
-    background-size: cover;
-}
-#sec02_02{
-    background-image: url(/img/sub01_product/sec02_02.jpg);
-    background-size: cover;
-}
-#sec02_03{
-    background-image: url(/img/sub01_product/sec02_03.jpg);
-    background-size: cover;
-}
-.txt_box1{
-    padding-top: 400px;
-}
-.txt_box2{
-    padding-top: 430px;
+    letter-spacing: 3px;
+    font-size: 16px;
 }

@@ -121,7 +121,7 @@ section{
 }
 #hd_btm > p{
     position: absolute;
-    top: 94%;
+    top: 95%;
     left: 50%;
     transform: translate(-50%,-50%);
     z-index: 100;
@@ -485,9 +485,15 @@ section{
     text-align: center;
     position: relative;
     top: -10%;
+    cursor: pointer;
+}
+#backtotop > button{
+    background-color: transparent;
+    border:none;
 }
 #backtotop img{
     transition: 0.3s;
+    cursor: pointer;
 }
 #backtotop:hover img{
     height: 30px;

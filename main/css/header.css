@@ -81,9 +81,13 @@
     clear: both;
     padding: 70px 30px 100px 60px;
 }
-.sub_hd > i{
+.plusbtn{
     float: right;
     margin-top: 13px;
+    transition: 0.3s;
+}
+.plusbtn:hover{
+    transform: rotate(-180deg);
 }
 .sub_2nd {
     line-height: 50px;
