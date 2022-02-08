@@ -285,15 +285,30 @@ section{
 #sec_04{
     width: 100%;
     height: 100vh;
-}#bg{
-    background-image: url(/img/main/sec04/sec04_bg.png);
-    background-color: #475764;
-    background-size: cover;
-    display: flex;
+    overflow: hidden;
 }
-/* #bg_under{
+#bg{
+    background-image: url(/img/main/sec04/sec04_bg.png);
+    background-color: rgba(0,0,0,0.7);
+    /* background-color: #475764; */
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+    transition: 3.0s;
+    position: relative;
+    transform: scale(1.5);
+    opacity:0;
+}
+#bg.on{
+    background-color: #475764;
+    transform: scale(1.0);
+    opacity: 1;
+}
+#sec04_inner{
     display: flex;
-} */
+    z-index: 1;
+    background-color: transparent;
+}
 .sec04s{
     width: 33.3333%;
     height: 100vh;
@@ -359,7 +374,8 @@ section{
 }
 #sec05_bg{
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
+    margin: 0 250px;
 }
 .sec05_bann > p {
     font-size: 20px;
@@ -367,16 +383,32 @@ section{
     color:#fff;
     font-weight: bold;
     position: absolute;
+    left: 40px;
+    bottom: 40px;
 }
 .sec05_bann{
-    transition: 0.5s;
+    transition: 0.9s;
+    width: 30%;
+    height: 500px;
+    opacity: 0;
 }
-.sec05_bann > img{
-    filter: brightness(50%);
-    position: relative;
+.sec05_ban01{
+    background-image: url(/img/main/sec05/sec05_01.jpg);
+    background-size: cover;
+    filter: brightness(0.5);
 }
-.sec05_bann:not(:last-child){
-    padding-right: 50px;
+.sec05_bann.on{
+    opacity: 1;
+}
+.sec05_ban02{
+    background-image: url(/img/main/sec05/sec05_02.jpg);
+    background-size: cover;
+    filter: brightness(0.5);
+}
+.sec05_ban03{
+    background-image: url(/img/main/sec05/sec05_03.jpg);
+    background-size: cover;
+    filter: brightness(0.5);
 }
 .sec05_bann:hover{
     filter: brightness(150%);
@@ -394,7 +426,6 @@ section{
     height: 75vh;
     background-color: #41465b;
     background-image: url(/img/main/sec04/sec04_bg.png);
-    transition: 0.3s;
 }
 #sec06_inner {
     width: 75%;
