@@ -178,14 +178,26 @@ section{
     opacity: 1;
     overflow: hidden; */
 }
-/* .txt_top.on{
+.pos_box01{
+    position: absolute;
+    /* background-color: coral; */
+    transition: 0.8s;
+    opacity: 0;
+    top: 400px;
+    /* overflow: hidden; */
+}
+.pos_box01.on{
     opacity: 1;
     top: 300px;
-} */
+}
 .sec02_bann{
     display: flex;
     align-items: center;
-    transition: 0.5s;
+    transition: 0.9s;
+    /* 수정(모션) */
+    /* margin-top: 80px;  */
+    /* position: absolute; */
+    /* overflow: hidden; */
 }
 #sec02_01{
     background-image: url(/img/main/sec02/sec02_01.jpg);
@@ -236,6 +248,10 @@ section{
     background-image: url(/img/main/sec03/sec03_04.jpg);
     background-size: cover;
 }
+/* 모션 수정 */
+.txt_box_sec03{
+    position: absolute;
+}
 .sec03_bann{
     display: flex;
     align-items: center;
@@ -253,6 +269,17 @@ section{
 .sec03s:hover .sec03_bann>i {
     font-size: 35px;
 }
+.pos_box02{
+    position: absolute;
+    transition: 0.8s;
+    opacity: 0;
+    top: 400px;
+    /* overflow: hidden; */
+}
+.pos_box02.on{
+    opacity: 1;
+    top: 300px;
+}
 
 /* sec04 */
 #sec_04{
@@ -264,6 +291,9 @@ section{
     background-size: cover;
     display: flex;
 }
+/* #bg_under{
+    display: flex;
+} */
 .sec04s{
     width: 33.3333%;
     height: 100vh;
