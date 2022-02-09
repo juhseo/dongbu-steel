@@ -20,6 +20,8 @@ section{
     height: 100vh;
     background-attachment: fixed;
 }
+
+
 /* sec01 */
 #sec01_bg{
     background-image: url(/img/sub02_xtone/product_1.jpg);
@@ -27,19 +29,10 @@ section{
     width: inherit;
     height: inherit;
 }
-/* #sec01_bg > h3 > img{
-    position: absolute;
-    left:50%; 
-    top:50%; 
-    transform:translate(-50%,-50%);
-    color: #fff;
-    letter-spacing: 23px;
-} */
 #movetit{
     position: absolute;
     left:50%; 
     top:60%; 
-    /* top:50%; */
     transform:translate(-50%,-50%);
     color: #fff;
     font-size: 46px;

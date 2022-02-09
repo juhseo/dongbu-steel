@@ -11,6 +11,3 @@ $(document).ready(function(){
     })
 
 })
-
-// let scrollT= document.querySelector('#prod_bg>h3');
-// let divTop = document.documentElement.scrollTop;

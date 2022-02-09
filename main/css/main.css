@@ -15,7 +15,6 @@ body{ -ms-overflow-style: none; } ::-webkit-scrollbar { display: none; }
     to { opacity : 1; }
 }
 
-/* 본문 */
 
 /* main */
 section{
@@ -23,29 +22,6 @@ section{
     height: 100vh;
     background-attachment: fixed;
 }
-/* #nav a {
-    display: block;
-    width: 30px;
-    height: 30px;
-    border-radius: 50%;
-    background-color: transparent;
-    border: 2px solid #ccc;
-    position: absolute;
-    top: 85%;
-    left: 50%;
-    color: #fff;
-    text-decoration: none;
-    text-align: center;
-    line-height: 10px;
-    font-size: 50px;
-}
-.prev{
-    margin-left: calc(-2%);
-}
-.next{
-    margin-left: calc(2%);
-} */
-
 #conn{
     position: fixed;
     right: 50px;
@@ -105,7 +81,6 @@ section{
     cursor: pointer;
 }
 
-/* sub메뉴 잠시 none */
 #hd_btm > span{
     position: absolute;
     top: 88%;
@@ -129,6 +104,8 @@ section{
     letter-spacing: 3px;
     font-size: 16px;
 }
+
+
 /* sec01 */
 #sec_01{
     width: 100%;
@@ -138,6 +115,8 @@ section{
     position: absolute;
     animation: fade 0.9s;
 }
+
+
 /* sec02 */
 #sec_02{
     width: 100%;
@@ -171,19 +150,12 @@ section{
     font-weight: bold;
     padding-bottom: 20px;
     letter-spacing: 5px;
-    /* 아래 수정부분 */
-    /* position: absolute;
-    top: -200px;
-    transition: 0.8s;
-    opacity: 1;
-    overflow: hidden; */
 }
 .pos_box01{
     position: absolute;
     transition: 0.8s;
     opacity: 0;
     top: 400px;
-    /* overflow: hidden; */
 }
 .pos_box01.on{
     opacity: 1;
@@ -193,10 +165,6 @@ section{
     display: flex;
     align-items: center;
     transition: 0.9s;
-    /* 수정(모션) */
-    /* margin-top: 80px;  */
-    /* position: absolute; */
-    /* overflow: hidden; */
 }
 #sec02_01{
     background-image: url(/img/main/sec02/sec02_01.jpg);
@@ -247,7 +215,6 @@ section{
     background-image: url(/img/main/sec03/sec03_04.jpg);
     background-size: cover;
 }
-/* 모션 수정 */
 .txt_box_sec03{
     position: absolute;
 }
@@ -273,7 +240,6 @@ section{
     transition: 0.8s;
     opacity: 0;
     top: 400px;
-    /* overflow: hidden; */
 }
 .pos_box02.on{
     opacity: 1;
@@ -289,7 +255,6 @@ section{
 #bg{
     background-image: url(/img/main/sec04/sec04_bg.png);
     background-color: rgba(0,0,0,0.7);
-    /* background-color: #475764; */
     background-size: cover;
     width: 100%;
     height: 100vh;
@@ -358,6 +323,8 @@ section{
     border-bottom: 1px solid #9f81fc;
     transition: 0.3s;
 }
+
+
 /* sec05 */
 #sec_05{
     width: 100%;

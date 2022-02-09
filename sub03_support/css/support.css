@@ -72,7 +72,6 @@ section{
     position: absolute;
     left:50%; 
     top:60%; 
-    /* top:50%; */
     transform:translate(-50%,-50%);
     color: #fff;
     font-size: 46px;
@@ -86,6 +85,8 @@ section{
     opacity: 1;
     top: 50%;
 }
+
+
 /* sec02 */
 #sec02{
     background-color: #eee;
@@ -95,10 +96,8 @@ section{
 #consultant{
     width: 65%;
     height: 100vh;
-    /* padding-top: 120px; */
     position: absolute;
     z-index: 2;
-    /* display: none; */
     top: 165%;
     left: 50%;
     transform:translate(-50%,-50%);
@@ -113,8 +112,6 @@ section{
 }
 #sec02_hd > ul > li{
     color: #c4c4c4;
-    /* 클릭시 #666컬러 */
-    /* css transition 참고하기 */
     letter-spacing: 3px;
     font-weight: bold;
 }
@@ -204,8 +201,6 @@ section{
 }
 .steels{    
     position: relative;
-    /* 임시 */
-
 }
 .steels > p{
     color: #fff;
@@ -232,7 +227,6 @@ section{
 }
 .dwn_btn:hover{
     color: #000;
-    /* 차오르는 애니메이션 추가하기 */
 }
 
 /* product data */

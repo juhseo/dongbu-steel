@@ -22,11 +22,6 @@ $(document).ready(function(){
     })
 })
 
-
-//부모요소에 relative를 주고 움직일 대상에 absolute를 주고
-// top값 조정 opacity 조정
-
-
 //sec03 텍스트 무빙
 $(document).ready(function(){
     $(window).on('scroll',function(){

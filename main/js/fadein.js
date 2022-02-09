@@ -14,12 +14,3 @@ function chImg(){
     indexNum = nextNum;
 }
 setInterval(chImg,3000);
-
-
-
-
-
-// imgDivs[0].style.display = 'none';
-// imgDivs[1].style.display = 'none';
-// imgDivs[2].style.display = 'none';
-// imgDivs[3].style.display = 'none';

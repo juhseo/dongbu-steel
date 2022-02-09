@@ -45,7 +45,6 @@
     justify-content: center;
     align-items: center;
     z-index:100;
-    /* 제일 위로 올려주기 */
 }
 #imenu:hover{
     cursor: pointer;
@@ -65,7 +64,6 @@
     position: absolute;
 }
 #close_btn {
-    /* rigmenu div */
     height: 30px;
     color: #333;
     float: right;
@@ -77,7 +75,6 @@
     padding: 30px 20px 30px 0;
 }
 .sub_1st {
-    /* #rigmenu > ul */
     clear: both;
     padding: 70px 30px 100px 60px;
 }
