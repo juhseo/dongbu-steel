@@ -13,6 +13,8 @@
     <script src="/main/js/autoscroll.js"></script>
     <script src="/main/js/submenu.js" defer></script>
     <script src="/main/js/mousemoving.js"></script>
+    <script src="/main/js/moveTitle.js"></script>
+    <script src="js/click_sub_newsroom.js" defer></script>
 </head>
 </head>
 <body>
@@ -46,7 +48,7 @@
                             <li class="sub_2nd">
                                 <div class="sub_hd">
                                     <span>PRODUCT</span>
-                                    <i id="plusbtn" class="material-icons">add</i>
+                                    <i class="material-icons plusbtn">add</i>
                                 </div>
                                 <ul class="sub">
                                     <li>COLDROLLED & GALVANIZED STEEL</li>
@@ -57,7 +59,7 @@
                             <li class="sub_2nd">
                                 <div class="sub_hd">
                                     <span>XTONE</span>
-                                    <i class="material-icons">add</i>
+                                    <i class="material-icons plusbtn">add</i>
                                 </div>
                                 <ul class="sub">
                                     <li>PRE-COATED METAL</li>
@@ -69,7 +71,7 @@
                             <li class="sub_2nd">
                                 <div class="sub_hd">
                                     <span>SUPPORT</span>
-                                    <i class="material-icons">add</i>
+                                    <i class="material-icons plusbtn">add</i>
                                 </div>
                                 <ul class="sub">
                                     <li>CONSULTANT</li>
@@ -80,7 +82,7 @@
                             <li class="sub_2nd">
                                 <div class="sub_hd">
                                     <span>COMPANY</span>
-                                    <i class="material-icons">add</i>
+                                    <i class="material-icons plusbtn">add</i>
                                 </div>
                                 <ul class="sub">
                                     <li>경영철학</li>
@@ -91,7 +93,7 @@
                             <li class="sub_2nd">
                                 <div class="sub_hd">
                                     <span>NEWS ROOM</span>
-                                    <i class="material-icons">add</i>
+                                    <i class="material-icons plusbtn">add</i>
                                 </div>
                                 <ul class="sub">
                                     <li>PRESS CENTER</li>
@@ -157,21 +159,24 @@
         <div id="hd_btm">
             <span class="material-icons">mouse</span>
             <p>SCROLL DOWN</p>
+            <!-- E-SALES -->
         </div>
     </header>
     <!-- main -->
     <main>
         <section id="sec01">
-            <div id="newsroom_bg">
-                <h3>NEWS ROOM</h3>
+            <div id="sec01_bg">
+                <h3 id="movetit" class="on">NEWS ROOM</h3>
             </div>
         </section>
         <section id="sec02">
             <div id="sec02-bg">
                 <div id="btns">
-                    <div id="btn01" class="buttons">PRESS CENTER</div>
+                    <div id="btn01" class="buttons on">PRESS CENTER</div>
                     <div id="btn02" class="buttons">MEDIA LIBRARY</div>
                 </div>
+
+                <!-- news부분 -->
                 <div id="news">
                     <div id="line01" class="line">
                         <div id="n01" class="ns">
@@ -291,6 +296,135 @@
                                     릴레이챌린지 동참
                                 </p>
                                 <p class="n_desc">
+                                    KG 동부제철 박성희 대표가 12일 어린이 교통사고<br/>
+                                    예방을 위한 어린이 교통안전 릴레이 챌린지에<br/>
+                                    동참했다. 이 캠페인은 행정안전부 가 주관하고...
+                                </p>
+                                <p class="n_date">2021-05-12</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- media 부분 -->
+                <div id="media">
+                    <div id="m_line01" class="line">
+                        <div id="m01" class="ms">
+                            <div id="m01_img" class="m_img"></div>
+                            <div class="md_btm">
+                                <p class="md_hd">[ KG뉴스 ] 철강업계 최대규모 ESS(친환경 에너지 저장시스템)구축을 통한 ESG경영 실천</p>
+                                <p class="md_desc">
+                                    KG동부제철이 본격적인 ESG경영실천에 나섰습니다.
+                                    바로, 11월 30일 철강업계 최대 규모의 ESS시스템 준공식이 있었는데요.
+                                    ESS(Energy Storage...
+                                </p>
+                                <p class="m_date">2021-03-31</p>
+                            </div>
+                        </div>
+                        <div id="m02" class="ms">
+                            <div id="m02_img" class="m_img"></div>
+                            <div class="md_btm">
+                                <p class="md_hd">
+                                    [자랑스러운 KG사람들]
+                                    기술로 미래를 여는 KG동부제철 기술연구소 사람들을 소개합니다.
+                                </p>
+                                <p class="m_desc">
+                                    Think! Edison, Do! EdisonKG동부제철 기술력의 심장! 
+                                    기술연구소 사람들을 소개합니다.
+                                    최정예 전문가들로 구성된 기술연구소는KG동부제철의...
+                                </p>
+                                <p class="m_date">2021-03-31</p>
+                            </div>
+                        </div>
+                        <div id="m03" class="ms">
+                            <div id="m03_img" class="m_img"></div>
+                            <div class="md_btm">
+                                <p class="md_hd">XTONE, KG동부제철 컬러강판의 새로운 통합 브랜드</p>
+                                <p class="m_desc">
+                                    KG동부제철의 컬러강판 ‘X-TONE’(엑스톤)이 태국<br/> 
+                                    대중교통 지상철도를 밝게 빛낸다. KG동부<br/>
+                                    제철은 엑스톤이 내장재로 채택된 태국 방콕의...
+                                </p>
+                                <p class="m_date">2021-03-31</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="m_line02" class="line">
+                        <div id="m04" class="ms">
+                            <div id="m04_img" class="m_img"></div>
+                            <div class="md_btm">
+                                <p class="md_hd">
+                                    KG Family TV CF
+                                </p>
+                                <p class="m_desc">
+                                    KG동부제철이 포스코그룹 계열의 엔투비와 철강<br/>
+                                    설비 부품 구매대행 협약을 체결한 가운데 기업의<br/>
+                                    사회공헌 행보가 주목받는다. 이익 일부를 사회...
+                                </p>
+                                <p class="m_date">2021-03-31</p>
+                            </div>
+                        </div>
+                        <div id="m05" class="ms">
+                            <div id="m05_img" class="m_img"></div>
+                            <div class="md_btm">
+                                <p class="md_hd">
+                                    KG동부제철 홍보 영상
+                                </p>
+                                <p class="n_desc">
+                                    KG동부제철이 새로운 브랜드 ‘엑스톤(X-<br/>
+                                    TONE)’을 선보이며 컬러강판 시장 공략에 나선다.<br/>
+                                    30일 KG동부제철은 자사의 컬러강판 제품을...
+                                </p>
+                                <p class="m_date">2021-03-31</p>
+                            </div>
+                        </div>
+                        <div id="m06" class="ms">
+                            <div id="m06_img" class="m_img"></div>
+                            <div class="md_btm">
+                                <p class="md_hd">
+                                    일반칼라강판과 불연칼라강판 비교한 연소 시험
+                                </p>
+                                <p class="m_desc">
+                                    KG동부제철이 KG그룹 가족사로 탈바꿈한 이후<br/>
+                                    달라진 모습을 보이고 있다. 노사가 한마음으로<br/>
+                                    의기투합해 임금 및 단체협약(이하 임단협) 합의안...
+                                </p>
+                                <p class="m_date">2021-08-12</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="m_line03" class="line">
+                        <div id="m07" class="ms">
+                            <div id="m07_img" class="m_img"></div>
+                            <div class="md_btm">
+                                <p class="md_hd">칼라강판 외장재 사진 응모전</p>
+                                <p class="m_desc">
+                                    KG동부제철이 당진공장에 약 170MWh 규모의<br/>
+                                    에너지저장시스템(ESS·Energy Storage System)을<br/>
+                                    가동한다. KG동부제철은 철강업계 최대 규모...
+                                </p>
+                                <p class="m_date">2021-03-31</p>
+                            </div>
+                        </div>
+                        <div id="m08" class="ms">
+                            <div id="m08_img" class="m_img"></div>
+                            <div class="md_btm">
+                                <p class="md_hd">MgCOT(맥코트), 고내식 용융도금 강판, KG동부제철</p>
+                                <p class="m_desc">
+                                    KG동부제철 박성희 대표가 9일 한국철강협회가<br/>
+                                    주최한 제22회 철의 날 행사에서 은탑산업훈장을<br/>
+                                    수상했다. 박성희 대표는 27년간 KG동부제철에...
+                                </p>
+                                <p class="m_date">2021-06-08</p>
+                            </div>
+                        </div>
+                        <div id="m09" class="ms">
+                            <div id="m09_img" class="m_img"></div>
+                            <div class="md_btm">
+                                <p class="md_hd">
+                                    프린테크(Printech) 소개- KG 동부제철
+                                </p>
+                                <p class="m_desc">
                                     KG 동부제철 박성희 대표가 12일 어린이 교통사고<br/>
                                     예방을 위한 어린이 교통안전 릴레이 챌린지에<br/>
                                     동참했다. 이 캠페인은 행정안전부 가 주관하고...

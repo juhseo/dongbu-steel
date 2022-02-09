@@ -10,6 +10,18 @@ $(document).ready(function(){
         }
     })
 })
+// 서브페이지 main text 무빙
+$(document).ready(function(){
+    $(window).on('scroll',function(){
+        let scrollT = $(this).scrollTop();
+        if(scrollT==0){
+            $('#movetit').addClass('on');
+        }else{
+            $('#movetit').removeClass('on');
+        }
+    })
+})
+
 
 //부모요소에 relative를 주고 움직일 대상에 absolute를 주고
 // top값 조정 opacity 조정
@@ -54,9 +66,5 @@ $(document).ready(function(){
     })
 })
 
-//서브페이지 main text 무빙
-// $(document).ready(function(){
-    
-// })
 
 

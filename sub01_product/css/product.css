@@ -20,28 +20,27 @@ section{
     height: 100vh;
     background-attachment: fixed;
 }
-#prod_bg{
+#sec01_bg{
     background-image: url(/img/sub01_product/product_1.jpg);
     background-size: cover;
     width: inherit;
     height: inherit;
 }
-#prod_bg > h3{
+#movetit{
     position: absolute;
     left:50%; 
-    /* top:60%;  */
-    top:50%;
+    top:60%; 
+    /* top:50%; */
     transform:translate(-50%,-50%);
     color: #fff;
     font-size: 46px;
     text-align: center !important;
     letter-spacing: 23px;
-    /* opacity: 0; */
+    opacity: 0;
     overflow: hidden;
     transition: 0.8s;
-    
 }
-#prod_bg > h3.on{
+#movetit.on{
     opacity: 1;
     top: 50%;
 }

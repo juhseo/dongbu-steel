@@ -14,8 +14,10 @@
     <script src="/main/js/submenu.js" defer></script>
     <script src="/main/js/mousemoving.js"></script>
     <script src="js/click_sub_company.js"defer></script>
+    <script src="/main/js/moveTitle.js"></script>
 </head>
 <body>
+    <!-- header -->
     <header>
         <div id="hd_top">
             <a href="/main/main.html"><img src="/img/main/hd_logo.png" alt="hdlogo"/></a>
@@ -45,7 +47,7 @@
                             <li class="sub_2nd">
                                 <div class="sub_hd">
                                     <span>PRODUCT</span>
-                                    <i id="plusbtn" class="material-icons">add</i>
+                                    <i class="material-icons plusbtn">add</i>
                                 </div>
                                 <ul class="sub">
                                     <li>COLDROLLED & GALVANIZED STEEL</li>
@@ -56,7 +58,7 @@
                             <li class="sub_2nd">
                                 <div class="sub_hd">
                                     <span>XTONE</span>
-                                    <i class="material-icons">add</i>
+                                    <i class="material-icons plusbtn">add</i>
                                 </div>
                                 <ul class="sub">
                                     <li>PRE-COATED METAL</li>
@@ -68,7 +70,7 @@
                             <li class="sub_2nd">
                                 <div class="sub_hd">
                                     <span>SUPPORT</span>
-                                    <i class="material-icons">add</i>
+                                    <i class="material-icons plusbtn">add</i>
                                 </div>
                                 <ul class="sub">
                                     <li>CONSULTANT</li>
@@ -79,7 +81,7 @@
                             <li class="sub_2nd">
                                 <div class="sub_hd">
                                     <span>COMPANY</span>
-                                    <i class="material-icons">add</i>
+                                    <i class="material-icons plusbtn">add</i>
                                 </div>
                                 <ul class="sub">
                                     <li>경영철학</li>
@@ -90,7 +92,7 @@
                             <li class="sub_2nd">
                                 <div class="sub_hd">
                                     <span>NEWS ROOM</span>
-                                    <i class="material-icons">add</i>
+                                    <i class="material-icons plusbtn">add</i>
                                 </div>
                                 <ul class="sub">
                                     <li>PRESS CENTER</li>
@@ -155,14 +157,14 @@
         
         <div id="hd_btm">
             <span class="material-icons">mouse</span>
-            <p>스크롤다운</p>
+            <p>SCROLL DOWN</p>
             <!-- E-SALES -->
         </div>
     </header>
     <main>
         <section id="sec01">
-            <div id="company_bg">
-                <h3>COMPANY</h3>
+            <div id="sec01_bg">
+                <h3 id="movetit" class="on">COMPANY</h3>
             </div>
         </section>
         <section id="sec02">

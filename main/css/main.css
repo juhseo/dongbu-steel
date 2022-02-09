@@ -180,7 +180,6 @@ section{
 }
 .pos_box01{
     position: absolute;
-    /* background-color: coral; */
     transition: 0.8s;
     opacity: 0;
     top: 400px;

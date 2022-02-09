@@ -9,6 +9,16 @@ li{list-style: none;}
 a{text-decoration: none; color: inherit;}
 body{ -ms-overflow-style: none; background-color: #eee;} ::-webkit-scrollbar { display: none; }
 
+@keyframes underMove01{
+    0%{
+        width: 0;
+    }
+    100%{
+
+    }
+}
+
+
 /* none */
 #conn{
     display: none;
@@ -16,8 +26,8 @@ body{ -ms-overflow-style: none; background-color: #eee;} ::-webkit-scrollbar { d
 
 /* .on */
 #sec02_hd > ul > li.on{
-    text-decoration: underline;
     color: #000;
+    text-decoration: underline;
 }
 #hd_btm > span{
     position: absolute;
@@ -50,7 +60,7 @@ section{
     background-attachment: fixed;
 }
 /* sec01 */
-#support_bg{
+#sec01_bg{
     background-image: url(/img/sub03_support/visual_support.jpg);
     background-size: cover;
     width: inherit;
@@ -58,15 +68,23 @@ section{
     background-position: center center;
     background-attachment: fixed;
 }
-#support_bg > h3{
+#movetit{
     position: absolute;
     left:50%; 
-    top:50%; 
+    top:60%; 
+    /* top:50%; */
     transform:translate(-50%,-50%);
     color: #fff;
     font-size: 46px;
     text-align: center !important;
     letter-spacing: 23px;
+    opacity: 0;
+    overflow: hidden;
+    transition: 0.8s;
+}
+#movetit.on{
+    opacity: 1;
+    top: 50%;
 }
 /* sec02 */
 #sec02{
@@ -109,10 +127,6 @@ section{
     height: 10px;
     margin: 0 20px;
 }
-/* sec02_bot */
-/* #sec02_bot{
-    display: none;
-} */
 #sec02_bot > ul{
     display: flex;
     justify-content: space-between;
