@@ -115,6 +115,9 @@ section{
     position: absolute;
     animation: fade 0.9s;
 }
+.fadeImg img{
+    width:100%;
+}
 
 
 /* sec02 */
